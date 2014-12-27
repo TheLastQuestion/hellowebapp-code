@@ -26,3 +26,9 @@ here:
 * [Chapter 11](https://github.com/limedaring/HelloWebApp-Code/tree/chapter-11)
 * [Chapter 12](https://github.com/limedaring/HelloWebApp-Code/tree/chapter-12)
 * [Chapter 13](https://github.com/limedaring/HelloWebApp-Code/tree/chapter-13)
+
+
+# Licens
+
+The code in this repository is licensed under the terms of the MIT license. This
+does not apply to the content in the Hello Web App book, which is copyrighted. :)
