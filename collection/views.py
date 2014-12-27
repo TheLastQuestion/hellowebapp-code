@@ -8,3 +8,11 @@ def index(request):
     return render_to_response('index.html', {
         'things': things,
     }, context_instance=RequestContext(request))
+
+def thing_detail(request, slug):
+    # grab the object...
+    thing = Thing.objects.get(slug=slug)
+    # and pass to the template
+    return render_to_response('things/thing_detail.html', {
+        'thing': thing,
+    }, context_instance=RequestContext(request))
