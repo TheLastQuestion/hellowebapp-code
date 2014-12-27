@@ -1,12 +1,8 @@
-{% load staticfiles %}
-<!doctype html>
-<html>
-<head>
-    <title>My Hello Web App Project</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-</head>
-<body>
-    <h1>Hello World!</h1>
-    <p>I am a basic website.</p>
-</body>
-</html>
+{% extends 'layouts/base.html' %}
+{% block title %}Homepage - {{ block.super }}{% endblock %}
+
+{% block content %}
+<h1>Hello World!</h1>
+<!-- here’s the variable we are passing in -->
+<p>This is my name: {{ thing|truncatewords:1 }}</p>
+{% endblock %}
