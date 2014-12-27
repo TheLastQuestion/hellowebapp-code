@@ -1,7 +1,7 @@
-from django.shortcuts import render, render_to_response
+from django.shortcuts import render, render_to_response, redirect
 from django.template import RequestContext
 from collection.models import Thing
-from collection.forms import EditThingForm
+from collection.forms import ThingForm
 
 # the rewritten view!
 def index(request):
@@ -22,7 +22,7 @@ def edit_thing(request, slug):
     # grab the object...
     thing = Thing.objects.get(slug=slug)
     # set the form we're using...
-    form_class = EditThingForm
+    form_class = ThingForm
 
     # if we're coming to this view from a submitted form,  
     if request.method == 'POST':
